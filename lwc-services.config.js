@@ -17,7 +17,7 @@
 // };
 
 module.exports = {
-     buildDir: './docs',
+    //  buildDir: './docs',
     resources: [{ from: 'src/client/resources', to: 'docs/resources/' },
     // {
     //     from: 'node_modules/@salesforce-ux/design-system/assets',
@@ -25,7 +25,7 @@ module.exports = {
     // },
     {
         from: 'node_modules/@salesforce-ux/design-system/assets',
-        to: 'dist/SLDS'
+        to: 'docs/SLDS'
     }
     ],
     sourceDir: './src/client',
