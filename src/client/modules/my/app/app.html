@@ -1,0 +1,107 @@
+<template>
+    <div
+        class="slds-grid slds-gutters slds-wrap slds-grid_align-center slds-p-around_xx-large"
+    >
+        <div
+            class="slds-col slds-large-size_6-of-12 slds-medium-size_8-of-12 slds-size_12-of-12"
+        >
+            <article class="slds-card">
+                <div class="slds-card__header slds-grid">
+                    <!-- card header will go here -->
+                    <header
+                        class="slds-media slds-media_center slds-has-flexi-truncate slds-grid_align-center"
+                    >
+                        <div class="slds-text-heading_large">
+                            Happy Christmas To All
+                        </div>
+                    </header>
+                </div>
+                <!-- card body will go here -->
+                <div class="slds-card__body slds-card__body_inner">
+                    <p class="slds-text-body_small form-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Neque quae illum nesciunt distinctio veritatis
+                        natus ea impedit quisquam, quam cupiditate aliquid
+                        architecto dolorem consequuntur nobis consequatur ut
+                        sint vitae aperiam.
+                    </p>
+                    <div
+                        class="slds-grid slds-grid_align-space slds-p-top_medium"
+                    >
+                        <img
+                            src="/resources/santa-claus1.png"
+                            alt="santa claus one"
+                        />
+                        <img
+                            src="/resources/santa-claus2.png"
+                            alt="santa claus two"
+                        />
+                        <img
+                            src="/resources/santa-claus4.png"
+                            alt="santa claus three"
+                        />
+                    </div>
+                </div>
+                <form
+                    class="slds-p-left_medium slds-p-right_medium slds-p-bottom_medium"
+                    onsubmit={checkHandler}
+                >
+                    <div class="slds-form-element">
+                        <label
+                            class="slds-form-element__label"
+                            for="text-input-id-2"
+                        >
+                            <abbr class="slds-required" title="required"
+                                >* </abbr
+                            >Name</label
+                        >
+                        <div class="slds-form-element__control">
+                            <input
+                                name="Name"
+                                type="text"
+                                id="text-input-id-2"
+                                placeholder="Enter Your Name"
+                                required
+                                class="slds-input"
+                                onkeyup={formChange}
+                            />
+                        </div>
+                    </div>
+                    <div class="slds-form-element">
+                        <label
+                            class="slds-form-element__label"
+                            for="text-input-id-3"
+                        >
+                            <abbr class="slds-required" title="required"
+                                >* </abbr
+                            >Age</label
+                        >
+                        <div class="slds-form-element__control">
+                            <input
+                                name="Age"
+                                type="number"
+                                id="text-input-id-3"
+                                placeholder="Enter Your Age"
+                                required
+                                class="slds-input"
+                                onkeyup={formChange}
+                            />
+                        </div>
+                    </div>
+                    <div class="slds-p-top_medium">
+                        <button
+                            type="submit"
+                            class="slds-card__footer-action slds-button slds-button_brand margin-auto"
+                        >
+                            Check My Gift
+                        </button>
+                    </div>
+                </form>
+                <!-- card footer will go here -->
+                <!-- <footer class="slds-card__footer">
+                    <h1>Hey their its Footer</h1>
+                </footer> -->
+            </article>
+        </div>
+    </div>
+</template>
