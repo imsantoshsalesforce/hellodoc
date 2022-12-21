@@ -18,14 +18,14 @@
 
 module.exports = {
     //  buildDir: './docs',
-    resources: [{ from: 'src/client/resources', to: 'docs/resources/' },
+    resources: [{ from: 'src/client/resources', to: 'dist/resources/' },
     // {
     //     from: 'node_modules/@salesforce-ux/design-system/assets',
     //     to: 'src/SLDS'
     // },
     {
         from: 'node_modules/@salesforce-ux/design-system/assets',
-        to: 'docs/SLDS'
+        to: 'dist/SLDS'
     }
     ],
     sourceDir: './src/client',
